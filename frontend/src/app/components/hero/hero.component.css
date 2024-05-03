@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    align-items: center;
+    
+    min-height: 100vh;
+
+    background-image: url(../../../assets/Hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8.75rem;
+}
+
+.text-wrap .hero-title {
+    font-size: 6.625rem;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.text-wrap .hero-phrase {
+    font-size: 1.5rem;
+    font-weight: 200;
+    max-width: 65%;
+    margin-top: 1.5rem;
+    color: var(--white);
+}
+
+.text-wrap .lets-bloog {
+    width: 11.25rem;
+    padding: 12px 0;
+    margin-top: 2.5rem;
+
+    font-size: 1rem;
+    font-weight: 800;
+
+    color: var(--black);
+    background: var(--gradient);
+    border-radius: 20px;
+    cursor: pointer;
+
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        filter: brightness(85%);
+    }
+}
