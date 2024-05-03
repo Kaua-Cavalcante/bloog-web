@@ -45,6 +45,6 @@
     transition: all .2s ease-in-out;
 
     &:hover {
-        filter: brightness(85%);
+        filter: var(--hover-light);
     }
 }

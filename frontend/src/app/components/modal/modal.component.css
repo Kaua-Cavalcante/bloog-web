@@ -8,8 +8,10 @@
     border-radius: 6px;
     position: fixed;
     left: 50%;
-    padding: 2.375rem 6.25rem;
+    padding: 2.375rem 0;
     max-width: 500px;
+    max-height: 95vh;
+    width: 100%;
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 11;
@@ -24,4 +26,152 @@
     top: 0;
     width: 100vw;
     z-index: 10;
+  }
+
+  .form-icon {
+    margin: 2.375rem 0 0.75rem 0;
+  }
+  
+  .form-title {
+    margin-bottom: 4rem;
+  
+    font-size: 1.5rem;
+    color: var(--dark-gray);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    max-width: 320px;
+    width: 100%;
+  }
+  
+  form .form-field {
+    position: relative;
+    margin-bottom: 1.1rem;
+  }
+  
+  .form-field label {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+  
+    font-size: 14px;
+    color: var(--gray);
+  
+    cursor: text;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form-field i img {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+  
+    top: 30%;
+    left: 88%;
+  }
+  
+  .form-field input {
+    width: 100%;
+    padding: 0.8rem;
+    padding-right: 2rem;
+  
+    outline: none;
+    font-size: 14px;
+  
+    border-radius: 4px;
+    border: 1px solid var(--light-gray);
+    background-color: var(--white);
+    color: var(--black);
+  
+    transition: all 0.2s ease-in-out;
+  
+    &:focus {
+      border-color: var(--pink);
+    }
+  }
+  
+  .form-field input:valid + label,
+  .form-field input:focus + label {
+      color: var(--pink);
+      font-size: 10px;
+      transform: translate(-2px, -11px);
+  }
+  
+  .form-options {
+    display: flex;
+    align-items: center;
+    margin: -0.8rem 0 2.375rem 0;
+  }
+  
+  .form-options input {
+    height: 10px;
+  }
+  
+  .form-options label {
+    font-size: 12px;
+    margin: 0 auto 0 4px;
+    color: #7c7c7c;
+  }
+  
+  .form-options a {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--link);
+  }
+  
+  form .btn-login {
+    height: 2.5rem;
+    font-size: 14px;
+    font-weight: 600;
+  
+    border-radius: 4px;
+    background: var(--gradient);
+    color: var(--white);
+  
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  
+    &:hover {
+      filter: var(--hover-light);
+    }
+  }
+  
+  form .btn-google-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  
+    height: 2.5rem;
+    margin: 1.1rem 0;
+    font-size: 14px;
+    font-weight: 400;
+  
+    border: 1px solid var(--light-gray);
+    border-radius: 4px;
+    background: #fff;
+    color: var(--gray);
+  
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  
+    &:hover {
+      background-color: var(--white);
+    }
+  }
+  
+  form p {
+    font-size: 14px;
+    color: var(--gray);
+    margin: 1rem auto;
+  }
+  
+  form p .btn-signin {
+    font-weight: 700;
+    color: var(--link);
+    background-color: transparent;
+    cursor: pointer;
   }
