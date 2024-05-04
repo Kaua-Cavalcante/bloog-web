@@ -2,6 +2,58 @@
     <div class="text-wrap">
         <h1 class="hero-title">Explore the Bloog.</h1>
         <p class="hero-phrase">Find ideas, inspiration and stories from people as amazing as you.</p>
-        <button class="lets-bloog">Let's Bloog</button>
+        <button class="lets-bloog" (click)="signup.toggle()">Let's Bloog</button>
     </div>
 </div>
+
+<app-modal #signup>
+    <i class="form-icon"
+      ><img src="../../../assets/bloog-icon.svg" alt="Ícone do Bloog"
+    /></i>
+    <h2 class="form-title">Welcome to Bloog!</h2>
+  
+    <form class="form-signup">
+      <div class="form-field">
+        <input type="text" id="name" required/>
+        <label for="name">Name</label>
+        <i><img src="../../../assets/user-icon.svg" alt="person icon"></i>
+      </div>
+  
+      <div class="form-field">
+        <input type="text" id="last-name" required/>
+        <label for="last-name">Last name</label>
+        <i><img src="../../../assets/user-icon.svg" alt="person icon"></i>
+      </div>
+  
+      <div class="form-field">
+        <input type="text" id="email" required/>
+        <label for="email">Email</label>
+        <i><img src="../../../assets/at-icon.svg" alt="At icon"></i>
+      </div>
+  
+      <div class="form-field">
+        <input type="password" id="create-password" required/>
+        <label for="create-password">Create password</label>
+        <i><img src="../../../assets/password-icon.svg" alt="password icon"></i>
+      </div>
+  
+      <div class="form-field">
+        <input type="password" id="confirm-password" required/>
+        <label for="confirm-password">Confirm password</label>
+        <i><img src="../../../assets/password-icon.svg" alt="password icon"></i>
+      </div>
+  
+      <div class="form-options">
+        <input type="checkbox" name="checkbox" id="terms" />
+        <label for="terms">I agree to the Terms and <a href="#">Privacy Policy</a></label>
+      </div>
+  
+      <button class="btn-login">Sign Up</button>
+      <button class="btn-google-login">
+        <i><img src="../../../assets/google-icon.svg" alt="" /></i>Sign in with
+        Google
+      </button>
+  
+      <p>Already have an account yet? <button class="btn-signin">Sign In</button></p>
+    </form>
+  </app-modal>

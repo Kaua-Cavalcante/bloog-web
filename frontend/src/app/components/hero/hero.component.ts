@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-
+import { ModalComponent } from '../modal/modal.component';
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [],
+  imports: [ModalComponent],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css'
 })
