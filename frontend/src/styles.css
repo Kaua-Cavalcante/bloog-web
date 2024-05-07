@@ -5,6 +5,7 @@
     --light-gray: #DCDCDC;
     --white: #f1f1f1;
     --pink: #D45093;
+    --orange: #F78F4A;
     --link: #E9756C;
     --gradient: linear-gradient(117deg, rgba(250,151,60,1) 0%, rgba(234,109,128,1) 58%, rgba(184,43,170,1) 100%);
     --shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
@@ -20,7 +21,7 @@
 
 body {
   -webkit-font-smoothing: subpixel-antialiased;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;    
 }
 
 img,
@@ -53,3 +54,13 @@ h6 {
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+::-moz-selection {
+  color: var(--white);
+  background: var(--orange);
+}
+
+::selection {
+  color: var(--white);
+  background: var(--orange);
+}
