@@ -1,0 +1,59 @@
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+
+  width: 100vw;
+  height: 4rem;
+  padding: 0 5rem 0 8.75rem;
+
+  background-color: white;
+  z-index: 2;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navigation a {
+  font-size: 14px;
+  color: var(--dark-gray);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--pink);
+  }
+}
+
+.user-picture {
+  border-radius: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
+
+.navigation .language {
+  background: none;
+  fill: #000000;
+}
+
+.navigation .language {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    scale: 1.2;
+  }
+}
