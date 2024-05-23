@@ -1,0 +1,26 @@
+.search-container {
+  position: relative;
+}
+
+.search-input {
+  border: 1px solid var(--coal);
+  border-radius: 24px;
+  padding: 7.5px 10px;
+  width: 36px;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  cursor: pointer;
+}
+
+.search-icon:hover + .search-input,
+.search-input:hover,
+.search-input:focus,
+.search-input:valid {
+  width: 400px;
+}
