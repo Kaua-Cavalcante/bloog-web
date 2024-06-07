@@ -1,0 +1,16 @@
+.card {
+    height: 24.125rem;
+    border: solid 1px #DCDCDC;
+    border-radius: 4px;
+}
+
+.author-info .author-photo {
+    width: 36px;
+    height: 36px;
+
+    border-radius: 36px;
+    background-image: url(../../../assets/images/perfil-adam.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
